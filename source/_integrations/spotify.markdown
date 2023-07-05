@@ -100,16 +100,13 @@ Internal examples: `http://192.168.0.2:8123/auth/external/callback`, `http://hom
 
 ## Using multiple Spotify accounts
 
-This integration supports multiple Spotify accounts at once. You don't need to
-create another Spotify application in the Spotify Developer Portal.
-Multiple Spotify accounts can be linked to a _single_ Spotify application.
+This integration supports multiple Spotify accounts at once. Before creating the second account, follow the instructions to add it the first time. In the developer portal of spotify you will need to do the same as for the first account. It's explained before.
 
-You will have to add those accounts into the **Users and Access** section of
-your application in the Spotify Developer Portal.
+At first, you will need to go to configuration > integrations and there go to more options in the top right button. There in application credentials you have to create a new credential, selecting the spotify integration. Then you will have to do the same as the first time, enter the ID client and the secret client (you find this in the developer section of your spotify account).
 
-To add an additional Spotify account to Home Assistant, go to the Spotify
-website, log out, and then repeat _only_ the steps in the
-[Configuration](#configuration) section. 
+At least, you have to go back to integration section and add the spotify integration. You will need to add the user you have create before and it will show as an entity.
+
+Now, enjoy having the multiple accounts.
 
 ## Selecting output source
 
